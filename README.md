@@ -216,9 +216,12 @@ In the intricate dance of software development, effective code testing emerges a
 
 In our journey through the landscape of code testing, remember that it's not just a phase but a continuous, evolving process. Following best practices ensures that our code stands resilient, a testament to our commitment to delivering software excellence.
 
-# References:
-Website :- GeeksforGeeks (https://www.geeksforgeeks.org/types-software-testing/)
-         - Brightsec (https://brightsec.com/blog/unit-testing-best-practices/)
-         - Software Testing Help (https://www.softwaretestinghelp.com/)
-         - katalon (https://katalon.com/resources-center/blog/software-testing)
+# Bibliography:
+ - GeeksforGeeks. (n.d.). Types of Software Testing. [Online]. Available: https://www.geeksforgeeks.org/types-software-testing/
+
+ - Brightsec. (n.d.). Unit Testing Best Practices. [Online]. Available: https://brightsec.com/blog/unit-testing-best-practices/
+
+ - Software Testing Help. (n.d.). [Online]. Available: https://www.softwaretestinghelp.com/
+
+ - Katalon. (n.d.). Software Testing. [Online]. Available: https://katalon.com/resources-center/blog/software-testing/
 
