@@ -81,7 +81,7 @@ class Calculator:
     def subtract(self, a, b):
         return a - b
 
-# Test for the entire calculator system
+ Test for the entire calculator system
 class TestCalculatorSystem(unittest.TestCase):
 
     def test_addition(self):
@@ -134,7 +134,7 @@ class UserAuthentication:
         else:
             return False
 
-# Acceptance test for user authentication
+Acceptance test for user authentication
 class TestUserAuthentication(unittest.TestCase):
 
     def test_successful_login(self):
@@ -211,8 +211,8 @@ In the intricate dance of software development, effective code testing emerges a
 In our journey through the landscape of code testing, remember that it's not just a phase but a continuous, evolving process. Following best practices ensures that our code stands resilient, a testament to our commitment to delivering software excellence.
 
 # References:
-Website : [GeeksforGeeks](https://www.geeksforgeeks.org/types-software-testing/)
-          [brightsec](https://brightsec.com/blog/unit-testing-best-practices/)
-          [Software Testing Help](https://www.softwaretestinghelp.com/)
-          [katalon](https://katalon.com/resources-center/blog/software-testing)
+Website : GeeksforGeeks (https://www.geeksforgeeks.org/types-software-testing/)
+          Brightsec (https://brightsec.com/blog/unit-testing-best-practices/)
+          Software Testing Help (https://www.softwaretestinghelp.com/)
+          katalon (https://katalon.com/resources-center/blog/software-testing)
 
