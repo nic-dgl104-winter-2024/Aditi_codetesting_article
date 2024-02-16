@@ -17,7 +17,7 @@ https://www.geeksforgeeks.org/types-software-testing/
 
 
 # Types of Code Testing:
-# Unit Testing:
+1. Unit Testing:
 Unit testing is akin to dissecting the code, examining individual units or components in isolation. The primary focus here is on scrutinizing the correctness of each unit's functionality. It ensures that every building block of the code operates as a well-oiled machine.
 
 Example:
@@ -27,45 +27,89 @@ def add(a, b):
     return a + b
 
 class TestAddFunction(unittest.TestCase):
+
     def test_add_positive_numbers(self):
         self.assertEqual(add(2, 3), 5)
-    
+
     def test_add_negative_numbers(self):
         self.assertEqual(add(-2, 3), 1)
 
+    def test_add_zero(self):
+        self.assertEqual(add(0, 0), 0)
+
+    def test_add_floats(self):
+        self.assertEqual(add(1.5, 2.5), 4.0)
+
 if __name__ == '__main__':
     unittest.main()
-# Why Is Unit Testing Important? 
+
+
+
+
+Why Is Unit Testing Important? 
 Unit testing enables you to exercise individual code units to verify and validate that it performs the intended software behavior. Unit testing solutions help ensure code security, reliability, and quality. These are typically automated tools that quickly build and auto-generate unit test cases to verify code quality across platforms, hosts, virtual environments, or hardware environments.
 
 Unit testing is especially important for embedded development environments requiring software systems and hardware to work in sync and comply with exacting functional safety standards. 
 
-# Integration Testing:
+2. Integration Testing:
   Integration testing steps beyond individual units, exploring how these units harmonize as a group. It ensures that different components integrate seamlessly, creating a symphony of functionality. Integration testing offers various approaches, including top-down, bottom-up, big-bang, and incremental integration testing.
 
-  Example:
-def multiply(a, b):
-    return a * b
+def calculate_total_price(item_prices):
+    return sum(item_prices)
+Your test could look like this:
 
-def test_multiply():
-    assert multiply(2, 3) == 6
+python
+import unittest
 
+class TestCalculateTotalPrice(unittest.TestCase):
 
-# System Testing:
+    def test_calculate_total_price(self):
+        item_prices = [10, 20, 30]
+        self.assertEqual(calculate_total_price(item_prices), 60)
+
+if __name__ == '__main__':
+    unittest.main()
+
+    
+3. System Testing:
 System testing takes a holistic approach, examining the entire system to verify that it aligns with the specified requirements. It assesses the software's functionality in the context of both system and functional requirements, covering all aspects from functionality to nonfunctional elements.
 
-# Alpha Testing:
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    def subtract(self, a, b):
+        return a - b
+
+# Test for the entire calculator system
+class TestCalculatorSystem(unittest.TestCase):
+
+    def test_addition(self):
+        calculator = Calculator()
+        result = calculator.add(3, 5)
+        self.assertEqual(result, 8)
+
+    def test_subtraction(self):
+        calculator = Calculator()
+        result = calculator.subtract(10, 4)
+        self.assertEqual(result, 6)
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+5. Alpha Testing:
 Alpha testing, a form of validation testing, takes place internally before the software reaches the hands of end-users. Typically orchestrated by QA teams, alpha testing ensures that the software meets internal standards before external release.
 Example: 
 When software testing is performed internally within the organization.
 
-# Beta Testing:
+6. Beta Testing:
 Beta testing ventures into the real-world environment, releasing the software to a limited number of end-users. This controlled exposure helps identify potential issues that might only surface in a dynamic, user-driven setting.
 Example: 
 When software testing is performed for the limited number of people.
 
 
-# Stress Testing :
+7. Stress Testing :
 In Stress Testing, we give unfavorable conditions to the system and check how they perform in those conditions. 
 
 Example:
@@ -78,11 +122,58 @@ It is designed to test the run-time performance of software within the context o
 Example: 
 Checking several processor cycles.
 
-# Acceptance Testing:
+7. Acceptance Testing:
 Acceptance testing brings the end-users into the equation, validating whether the software aligns with their acceptance criteria and requirements. It ensures that the final product resonates with user expectations.
 
-# Regression Testing:
+class UserAuthentication:
+
+    def login(self, username, password):
+        # Actual authentication logic goes here
+        if username == 'user' and password == 'password':
+            return True
+        else:
+            return False
+
+# Acceptance test for user authentication
+class TestUserAuthentication(unittest.TestCase):
+
+    def test_successful_login(self):
+        authentication = UserAuthentication()
+        self.assertTrue(authentication.login('user', 'password'))
+
+    def test_failed_login(self):
+        authentication = UserAuthentication()
+        self.assertFalse(authentication.login('wrong_user', 'wrong_password'))
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+
+
+9. Regression Testing:
 Regression testing acts as a vigilant guardian, retesting the software after modifications to guarantee that new changes don't inadvertently disrupt existing functionalities.
+def calculate_average(numbers):
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
+
+import unittest
+
+class TestCalculateAverage(unittest.TestCase):
+
+    def test_average_of_numbers(self):
+        numbers = [1, 2, 3, 4, 5]
+        self.assertEqual(calculate_average(numbers), 3.0)
+
+    def test_average_of_empty_list(self):
+        empty_list = []
+        self.assertEqual(calculate_average(empty_list), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+
+
 
 # Best Practices for Effective Code Testing:
 # Automate Testing:
@@ -121,7 +212,7 @@ In our journey through the landscape of code testing, remember that it's not jus
 
 # References:
 Website : [GeeksforGeeks](https://www.geeksforgeeks.org/types-software-testing/)
-                  Software Testing Help 
-                   ChatGPT's insights
-             Internet research
+          [brightsec](https://brightsec.com/blog/unit-testing-best-practices/)
+          [Software Testing Help](https://www.softwaretestinghelp.com/)
+          [katalon](https://katalon.com/resources-center/blog/software-testing)
 
