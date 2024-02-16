@@ -7,13 +7,13 @@ In the dynamic world of software development, where innovation and efficiency re
 Code testing is not merely a routine checkpoint; it's a crucial process that stands as the sentinel guarding against the infiltration of bugs, errors, and vulnerabilities into the software. It is the assurance that the code not only functions as intended but also meets the expectations and requirements of the end-users. By subjecting the code to rigorous testing, developers can elevate the overall quality of the software, fostering a positive user experience.
 
 Principles of Testing
-	All the tests should meet the customer’s requirements.
-	To make our software testing should be performed by a third party.
-	Exhaustive testing is not possible. As we need the optimal amount of testing based on the risk assessment of the application. 
-	All the tests to be conducted should be planned before implementing it 
-	It follows the Pareto rule(80/20 rule) which states that 80% of errors come from 20% of program components. 
-	Start testing with small parts and extend it to large parts.
-https://www.geeksforgeeks.org/types-software-testing/
+- All the tests should meet the customer’s requirements.
+- To make our software testing should be performed by a third party.
+- Exhaustive testing is not possible. As we need the optimal amount of testing based on the risk assessment of the application. 
+- All the tests to be conducted should be planned before implementing it 
+- It follows the Pareto rule(80/20 rule) which states that 80% of errors come from 20% of program components. 
+- Start testing with small parts and extend it to large parts.
+   https://www.geeksforgeeks.org/types-software-testing/
 
 
 # Types of Code Testing:
@@ -192,18 +192,18 @@ Isolating individual components for testing is a best practice that helps identi
 Implementing continuous integration practices automates the testing process whenever new code is added. This ensures that any new additions undergo rigorous testing, maintaining the integrity of the overall codebase.
 
 # Advantages of Software Testing
-	Improved software quality and reliability.
-	Early identification and fixing of defects.
-	Improved customer satisfaction.
-	Increased stakeholder confidence.
-	Reduced maintenance costs.
+- Improved software quality and reliability.
+- Early identification and fixing of defects.
+- Improved customer satisfaction.
+- Increased stakeholder confidence.
+- Reduced maintenance costs.
 
 # Disadvantages of Software Testing
-	Time-Consuming and adds to the project cost.
-	This can slow down the development process.
-	Not all defects can be found.
-	Can be difficult to fully test complex systems.
-	Potential for human error during the testing process.
+- Time-Consuming and adds to the project cost.
+- This can slow down the development process.
+- Not all defects can be found.
+- Can be difficult to fully test complex systems.
+- Potential for human error during the testing process.
 
 # Conclusion:
 In the intricate dance of software development, effective code testing emerges as the choreographer, orchestrating a symphony of reliability, quality, and functionality. By acknowledging the significance of testing and embracing diverse testing approaches, developers pave the way for software that not only meets but exceeds user expectations.
